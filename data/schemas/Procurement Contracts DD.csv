@@ -1,0 +1,15 @@
+column,type,label,sample values,description
+DocumentPdf,text,DocumentPdf,https://tempe-gis-opendata.s3.amazonaws.com/sire-purchasing-contracts/24358134.pdf?AWSAccessKeyId=AKIAU3NBCHLNEMBY5NEC&Signature=PXU8yAheewimCWIZEgbRkAlzzIU%3D&Expires=1576845096,The Url to the physical file stored in Amazon Web Services. This URL is a signature URL with an expiration date. This means that the URL will change each time the data is refreshed and will expire within a designated time. Go to the Purchasing Contracts link to view and save the latest URL representing the purchasing contract document.
+ContractNo,text,ContractNo,T16-083-01,The Business Key that uniquely identifies a contract defined in the CIty of Tempe's financial application
+DocumentType,text,DocumentType,"Solicitation, Pricing,  Renewal, Modification ","Describes the type of contract, e.g., Solicitation defines the request for proposal. Pricing describes the Award Notice with the price listing. Renewal defines the defines how and effective date the contract is renewed. Modification describes the changes made to the contract and the effective date of those changes."
+DocumentDescription,text,DocumentDescription,Renewal Effective 08.19.2017,Describes what type of document it is. Some of the descriptions includes an effective date timestamp-- the  date the document becomes effective.
+ContractVendorName,text,ContractVendorName,STANDARD PRINTING COMPANY INC,The Name of the Vendor defined in the Contract Agreement
+ContractDescription,text,ContractDescription,Waterplant Supervisor Services,"A general descriptive name of the equipment, vehicles, products, materials and services provided by the vendor"
+ContractStatus,text,ContractStatus,Approved ; Open ; Closed,Describes the status that the contract is in. Most contracts are either Approved (Active) or Closed (inactive)
+DocumentAddDate,Date,DocumentAddDate,12/11/2019,The date that the contract documented is added into the city's Document Storage System (SIRE)
+ContractBeginDate,Date,ContractBeginDate,12/13/2019,"The date that the contract begins. It is used to define the life of the contract which is from the contract begin date to the contract expiration date, e.g., 1 year contract, 5 year contract."
+ContractRenewalEndDate,Date,ContractRenewalEndDate,10/27/2020,"The date that the contract is up for renewal. For example,  a contract can be targeted with an expiration date 5 years from now, but up for renewal each year at the time of the Contract Renewal End Date"
+ContractExpirationDate,Date,ContractExpirationDate,10/27/2021,The date that the contract expires or is terminated
+Master Contract Number,numeric,Master Contract Number,17-130,The Business Key that uniquely identifies a Master Contract defined in the CIty of Tempe's financial application
+Estimated Contract Value,numeric,Estimated Contract Value ($),"318,878.84",An estimate of the contract maximum amount that cannot exceed the total purchase order amount
+Master Contract Description,text,Master Contract Description,911 Dispatch Console Support,Describes the Master Contract
