@@ -17,3 +17,18 @@ nohup.out
 wheels/
 scratch/
 .ramdisk/
+
+# Generated data
+contracts.csv
+data/raw/
+data/processed/
+/tmp/
+*.csv
+
+# Ramdisk outputs
+/ramdisk/
+
+# Python
+__pycache__/
+*.pyc
+.env
