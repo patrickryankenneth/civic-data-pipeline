@@ -6,6 +6,8 @@ import ssl
 import os
 import csv
 import datetime
+import shutil
+from pathlib import Path
 
 # Fallback to /tmp/ramdisk if we don't have sudo permissions for root /ramdisk
 try:
@@ -182,12 +184,19 @@ def extract_and_decode():
                     
         decoded_rows.append(row_values)
 
+    # Write to ramdisk (primary/fast path)
     output_file = os.path.join(RAMDISK_DIR, "contracts.csv")
-
     with open(output_file, 'w', newline='', encoding='utf-8') as f:
         writer = csv.writer(f)
         writer.writerow(expected_headers)
         writer.writerows(decoded_rows)
+
+    # Also persist a durable copy to data/raw/ (relative to repo root, portable across machines)
+    repo_root = Path(__file__).resolve().parents[3]  # adjust index if this file moves
+    persistent = repo_root / "data" / "raw" / "contracts.csv"
+    persistent.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(output_file, persistent)
+    print(f"Also saved to {persistent}")
 
     print(f"Successfully processed {len(decoded_rows)} records into {output_file}")
 
