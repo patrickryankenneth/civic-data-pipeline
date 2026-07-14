@@ -1,0 +1,242 @@
+{
+    "url": "https://wabi-us-gov-iowa-api.analysis.usgovcloudapi.net/public/reports/querydata?synchronous=true",
+    "headers": {
+        "sec-ch-ua-platform": "\"Linux\"",
+        "referer": "https://app.powerbigov.us/",
+        "sec-ch-ua": "\"Chromium\";v=\"148\", \"HeadlessChrome\";v=\"148\", \"Not/A)Brand\";v=\"99\"",
+        "sec-ch-ua-mobile": "?0",
+        "x-powerbi-resourcekey": "6ff2c073-64c4-4f85-ad57-4ef52113ca44",
+        "requestid": "70b1fb80-3736-43d7-879f-56cf22b42f42",
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/148.0.7778.96 Safari/537.36",
+        "accept": "application/json, text/plain, */*",
+        "content-type": "application/json;charset=UTF-8",
+        "activityid": "c00c0083-11be-496c-8068-f8e6c59aa5eb"
+    },
+    "payload": {
+        "version": "1.0.0",
+        "queries": [
+            {
+                "Query": {
+                    "Commands": [
+                        {
+                            "SemanticQueryDataShapeCommand": {
+                                "Query": {
+                                    "Version": 2,
+                                    "From": [
+                                        {
+                                            "Name": "c",
+                                            "Entity": "ContractHistory",
+                                            "Type": 0
+                                        }
+                                    ],
+                                    "Select": [
+                                        {
+                                            "Column": {
+                                                "Expression": {
+                                                    "SourceRef": {
+                                                        "Source": "c"
+                                                    }
+                                                },
+                                                "Property": "DocumentPdf"
+                                            },
+                                            "Name": "ContractHistory.DocumentPdf"
+                                        },
+                                        {
+                                            "Column": {
+                                                "Expression": {
+                                                    "SourceRef": {
+                                                        "Source": "c"
+                                                    }
+                                                },
+                                                "Property": "ContractNo"
+                                            },
+                                            "Name": "ContractHistory.ContractNo"
+                                        },
+                                        {
+                                            "Column": {
+                                                "Expression": {
+                                                    "SourceRef": {
+                                                        "Source": "c"
+                                                    }
+                                                },
+                                                "Property": "DocumentType"
+                                            },
+                                            "Name": "ContractHistory.DocumentType"
+                                        },
+                                        {
+                                            "Column": {
+                                                "Expression": {
+                                                    "SourceRef": {
+                                                        "Source": "c"
+                                                    }
+                                                },
+                                                "Property": "DocumentDescription"
+                                            },
+                                            "Name": "ContractHistory.DocumentDescription"
+                                        },
+                                        {
+                                            "Column": {
+                                                "Expression": {
+                                                    "SourceRef": {
+                                                        "Source": "c"
+                                                    }
+                                                },
+                                                "Property": "ContractVendorName"
+                                            },
+                                            "Name": "ContractHistory.ContractVendorName"
+                                        },
+                                        {
+                                            "Column": {
+                                                "Expression": {
+                                                    "SourceRef": {
+                                                        "Source": "c"
+                                                    }
+                                                },
+                                                "Property": "ContractDescription"
+                                            },
+                                            "Name": "ContractHistory.ContractDescription"
+                                        },
+                                        {
+                                            "Column": {
+                                                "Expression": {
+                                                    "SourceRef": {
+                                                        "Source": "c"
+                                                    }
+                                                },
+                                                "Property": "ContractStatus"
+                                            },
+                                            "Name": "ContractHistory.ContractStatus"
+                                        },
+                                        {
+                                            "Column": {
+                                                "Expression": {
+                                                    "SourceRef": {
+                                                        "Source": "c"
+                                                    }
+                                                },
+                                                "Property": "DocumentAddDate"
+                                            },
+                                            "Name": "ContractHistory.DocumentAddDate"
+                                        },
+                                        {
+                                            "Column": {
+                                                "Expression": {
+                                                    "SourceRef": {
+                                                        "Source": "c"
+                                                    }
+                                                },
+                                                "Property": "ContractBeginDate"
+                                            },
+                                            "Name": "ContractHistory.ContractBeginDate"
+                                        },
+                                        {
+                                            "Column": {
+                                                "Expression": {
+                                                    "SourceRef": {
+                                                        "Source": "c"
+                                                    }
+                                                },
+                                                "Property": "ContractRenewalEndDate"
+                                            },
+                                            "Name": "ContractHistory.ContractRenewalEndDate"
+                                        },
+                                        {
+                                            "Column": {
+                                                "Expression": {
+                                                    "SourceRef": {
+                                                        "Source": "c"
+                                                    }
+                                                },
+                                                "Property": "ContractExpirationDate"
+                                            },
+                                            "Name": "ContractHistory.ContractExpirationDate"
+                                        },
+                                        {
+                                            "Column": {
+                                                "Expression": {
+                                                    "SourceRef": {
+                                                        "Source": "c"
+                                                    }
+                                                },
+                                                "Property": "Master Contract Number"
+                                            },
+                                            "Name": "ContractHistory.Master Contract Number"
+                                        },
+                                        {
+                                            "Column": {
+                                                "Expression": {
+                                                    "SourceRef": {
+                                                        "Source": "c"
+                                                    }
+                                                },
+                                                "Property": "Estimated Contract Value"
+                                            },
+                                            "Name": "ContractHistory.Estimated Contract Value"
+                                        },
+                                        {
+                                            "Column": {
+                                                "Expression": {
+                                                    "SourceRef": {
+                                                        "Source": "c"
+                                                    }
+                                                },
+                                                "Property": "Master Contract Description"
+                                            },
+                                            "Name": "ContractHistory.Master Contract Description"
+                                        }
+                                    ]
+                                },
+                                "Binding": {
+                                    "Primary": {
+                                        "Groupings": [
+                                            {
+                                                "Projections": [
+                                                    0,
+                                                    1,
+                                                    2,
+                                                    3,
+                                                    4,
+                                                    5,
+                                                    6,
+                                                    7,
+                                                    8,
+                                                    9,
+                                                    10,
+                                                    11,
+                                                    12,
+                                                    13
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "DataReduction": {
+                                        "DataVolume": 3,
+                                        "Primary": {
+                                            "Top": {
+                                                "Count": 30000
+                                            }
+                                        }
+                                    },
+                                    "Version": 1
+                                },
+                                "ExecutionMetricsKind": 1
+                            }
+                        }
+                    ]
+                },
+                "QueryId": "0",
+                "ApplicationContext": {
+                    "DatasetId": "e59519f4-8037-4443-9ca1-6d0447952892",
+                    "Sources": [
+                        {
+                            "ReportId": "5c4b9dc5-4573-4b62-9f4e-fe329b24db5c",
+                            "VisualId": "5cd4ea60c49686e59640"
+                        }
+                    ]
+                }
+            }
+        ],
+        "cancelQueries": [],
+        "modelId": 552006
+    }
+}

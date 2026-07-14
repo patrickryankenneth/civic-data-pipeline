@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "civic-pipeline"
+version = "0.1.0"
+description = "Tempe Procurement Contracts CDC & Profiling Pipeline"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "requests",
+    "pandas",
+    "polars",
+    "playwright"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "ruff"
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

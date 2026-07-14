@@ -6,8 +6,6 @@ __pycache__/
 nohup.out
 dump.rdb
 .ipynb_checkpoints/
-Containerfile
-compose.yaml
 container-startup.sh
 evocoder_schema.sql
 run-pipeline.sh
@@ -16,3 +14,28 @@ wheels/
 nohup.out
 
 
+wheels/
+scratch/
+.ramdisk/
+
+# Generated data
+contracts.csv
+data/raw/
+data/processed/
+/tmp/
+*.csv
+
+# Ramdisk outputs
+/ramdisk/
+
+# Python
+__pycache__/
+*.pyc
+.env
+scratch/
+
+# gitship internal state (auto-added by gitship)
+.gitship/
+
+# gitship diff exports (auto-added by gitship)
+gitship_exports/
