@@ -39,3 +39,5 @@ scratch/
 
 # gitship diff exports (auto-added by gitship)
 gitship_exports/
+build/
+*.egg-info/
